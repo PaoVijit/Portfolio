@@ -1,0 +1,405 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.header {
+
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+    width: 100%;
+    min-height: 40px;
+}
+
+.header-container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.header-left {
+
+    margin-left: 10px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header-menu {
+    display: flex;
+
+    justify-content: end;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.drop-down {
+    width: 30px;
+    position: absolute;
+    right: 50px;
+    display: none;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    transition: .4s;
+}
+
+.toggle:checked+.slider {
+    background-color: #2196F3;
+}
+
+
+.toggle:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+.toggle:checked+.slider:before {
+    transform: translateX(26px);
+    transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+section {
+    padding: 40px 0;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about-container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+
+.about-container>.about-me>p:nth-child(2) {
+    font-size: 40px;
+    background: linear-gradient(to right, blue, pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0;
+}
+
+
+
+
+
+.contents-container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.table-contents {
+
+
+    flex: 1;
+    margin-right: 10px;
+}
+
+.contents-detail {
+    flex: 3;
+
+}
+
+table {
+    position: sticky;
+    top: 6rem;
+    width: 240px;
+    border: 0.5px solid rgba(83, 81, 81, 0.292);
+    border-spacing: 0;
+    text-align: left;
+    border-radius: 10px;
+
+}
+
+thead {
+    background-color: #F3F4F6;
+
+}
+
+th {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 0.5px solid rgba(83, 81, 81, 0.292);
+}
+
+th {
+    padding: 15px 10px;
+    border-top-width: 0;
+    border-left-width: 0;
+}
+
+thead tr th {
+    padding: 10px 10px;
+}
+
+th:last-child,
+td:last-child {
+    border-right-width: 0;
+}
+
+tbody tr:last-child th {
+    border-bottom-width: 0;
+}
+
+
+
+.contents-detail span {
+    font-size: 35px;
+}
+
+.contents-detail ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+#Education,
+#Skills,
+#Work-Experience {
+    scroll-margin-top: 70px;
+}
+
+.li-edu1,
+.li-edu2,
+.li-edu3 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.li-edu1>span:nth-child(2),
+.li-edu2>span:nth-child(2),
+.li-edu3>span:nth-child(2) {
+    padding-left: 10px;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.li-edu3>span:nth-child(2),
+.li-edu2>span:nth-child(2) {
+    width: 80%;
+}
+
+.li-edu1>span:nth-child(4)>p,
+.li-edu2>span:nth-child(3)>p,
+.li-edu3>span:nth-child(3)>p {
+    display: block;
+
+    font-size: 15px;
+    margin: 4px 35px;
+
+}
+
+.li-edu3>span:nth-child(3)>p:last-child {
+    background-color: yellow;
+    border-radius: 2px;
+}
+
+.li-edu1>span:nth-child(3) {
+    background-color: aqua;
+    padding: 2px 5px;
+    margin-left: 5px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.contents-detail>.skill-list1,
+.contents-detail>.skill-list2 {
+    border: 1px solid rgba(86, 82, 82, 0.149);
+    padding-left: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.contents-detail>.skill-list2 {
+    margin-bottom: 30px;
+}
+
+.li-work1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.li-work1>h3 {
+    margin: 5px 0;
+    padding-left: 10px;
+    width: 90%;
+}
+
+.li-work1>p {
+    width: 90%;
+    padding-left: 35px;
+    margin: 0 0;
+}
+
+.li-work1>ul {
+    margin-left: 40px;
+}
+
+.li-work1>h3>span {
+    font-size: small;
+    background-color: aqua;
+    padding: 3px 3px;
+    border-radius: 3px;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+tr th a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease-in-out;
+}
+
+
+nav a:hover,
+tr th a:hover {
+    color: #e44d26;
+    /* Change the color to a highlight color of your choice */
+}
+
+@media (max-width: 1024px) {
+
+
+    .contents-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table-contents {
+        margin-bottom: 20px;
+    }
+
+    table {
+
+        position: static;
+
+        width: 100%;
+        border: 0.5px solid rgba(83, 81, 81, 0.292);
+        border-spacing: 0;
+        text-align: left;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .drop-down {
+        display: block;
+        position: static;
+        margin-left: 10px;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    .profile-image {
+        display: none;
+    }
+}
